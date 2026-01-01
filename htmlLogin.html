@@ -1,0 +1,78 @@
+
+<!-- login.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login • Harshitha Dance Academy</title>
+
+  <!-- Your site styles -->
+   <link rel="stylesheet" href="Login.css">
+
+  <!-- Optional: Fonts and icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.cssage">
+  
+</head>
+<body>
+  <main class="login-wrapper">
+    <header class="login-header">
+      <h1>Harshitha Dance Academy</h1>
+    </header>
+    
+    <section class="login-body">
+      <h2>Login to Your Account</h2>
+
+      <!-- OPENING FORM TAG (was missing) -->
+      <form id="login-form" novalidate>
+        <div class="form-field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required />
+        </div>
+
+        <div class="form-field">
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" placeholder="Enter your password" required minlength="6" />
+        </div>
+        
+        <div class="login-actions">
+          <label class="checkbox">
+            <input type="checkbox" name="remember" />
+            <span>Remember me</span>
+          </label>
+          <!-- Wire up the button to submit the form -->
+          <button class="btn-primary" type="submit">Login</button>
+        </div>
+
+        <!-- Feedback message target (was missing) -->
+        <p id="msg" class="login-message" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <!-- Place scripts before closing body -->
+  <script>
+    // Attach a submit handler to the form (recommended over inline onclick)
+    document.getElementById('login-form').addEventListener('submit', function (e) {
+      e.preventDefault(); // prevent page reload
+      login();
+    });
+
+    function login() {
+      // Use correct IDs: 'email' and 'password'
+      const u = document.getElementById("email").value.trim();
+      const p = document.getElementById("password").value;
+
+      // Simple client-side check (for demo only)
+      if (u === "Yerramharshitha004@gmail.com" && p === "harshitha") {
+        // Redirect to homepage
+        window.location.href = "index.html";
+      } else {
+        const msgEl = document.getElementById("msg");
+        msgEl.textContent = "Invalid Login";
+        msgEl.style.color = "#d32f2f"; // optional: red error text
+      }
+    }
+  </script>
+</body>
+</html>

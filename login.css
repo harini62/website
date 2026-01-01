@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+ 
+body {
+  margin: 0;
+  height: 100vh;
+    ;
+  background: linear-gradient(to bottom, crimson, crimson);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+ 
+.login-box {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 12px;
+  text-align: center;
+}
+ 
+.logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+ 
+h2 {
+  margin: 0;
+  font-weight: 600;
+}
+ 
+.subtitle {
+  color: #777;
+  margin-bottom: 30px;
+}
+ 
+input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+}
+ 
+input:focus {
+  outline: none;
+  border-color: #e8e5e5;
+}
+ 
+button {
+  width: 100%;
+  padding: 14px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+ 
+button:hover {
+  opacity: 0.9;
+}
+ 
+.links {
+  margin-top: 10px;
+}
+ 
+.links a {
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+}
+ 
+.divider {
+  margin: 20px 0;
+  color: #aaa;
+  font-size: 14px;
+}
+ 
+.google-btn {
+  background: #f5f5f5;
+  color: #000;
+  border: 1px solid #ddd;
+}
+ 
+.signup {
+  margin-top: 20px;
+  font-size: 14px;
+}
+ 
+.signup a {
+  color: #000;
+  font-weight: 600;
+  text-decoration: none;
+}
+ 
